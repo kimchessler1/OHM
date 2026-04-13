@@ -1,0 +1,177 @@
+# .cursorrules — OHM Playwright Automation
+
+## Project Context
+This is a Playwright UI test automation suite for **Lumen OHM** (Online Homework Manager).
+- Staging environment: https://ohm-stg.preprod.ludev.team/
+- Production smoke tests are a separate suite — do not mix them here
+- Application under test is an instructor-facing LMS tool with student and admin roles
+
+## Stack
+- Framework: Playwright (TypeScript)
+- Test runner: `@playwright/test`
+- Language: TypeScript (strict mode preferred)
+- Node version: 18+
+
+## File & Folder Structure
+```
+/tests
+  /specs                   ← Markdown test case source files (human-readable)
+    ohm-test-suite.md      ← Master spec (sections 1–25)
+  /e2e                     ← Playwright test files (*.spec.ts)
+    /auth
+    /home
+    /course-creation
+    /course-admin
+    /gradebook
+    /admin
+    /utilities
+    /student
+    /payment
+  /pages                   ← Page Object Model classes (*.page.ts)
+  /fixtures
+    /auth                  ← Saved auth states (instructor.json, student.json, admin.json)
+    /data                  ← Test data files (*.json)
+  /helpers                 ← Shared utilities and setup helpers
+playwright.config.ts
+.env.example
+```
+
+## Coding Conventions
+
+### Always use Page Object Model (POM)
+- Each major page or feature area gets its own Page Object class in `/tests/pages/`
+- Page Objects expose semantic methods, not raw locators
+- Example:
+```ts
+export class LoginPage {
+  constructor(private page: Page) {}
+  async loginAs(username: string, password: string) { ... }
+}
+```
+
+### Locator Priority (in order of preference)
+1. `data-testid` attributes
+2. ARIA roles: `getByRole('button', { name: /submit/i })`
+3. Labels: `getByLabel(/email/i)`
+4. Text: `getByText(...)` — use sparingly
+5. CSS selectors — last resort only
+
+### Environment Variables
+Never hardcode credentials or URLs. All in `.env` (gitignored).
+```
+BASE_URL=https://ohm-stg.preprod.ludev.team
+LUMEN_ADMIN_URL=
+
+# Instructor/teacher account (course owner)
+OHM_TEACHER_USERNAME=
+OHM_TEACHER_PASSWORD=
+
+# Admin account (NOT course owner — simulates support team)
+OHM_ADMIN_USERNAME=
+OHM_ADMIN_PASSWORD=
+
+# Student account
+OHM_STUDENT_USERNAME=
+OHM_STUDENT_PASSWORD=
+
+# Test data
+TEST_COURSE_ID=
+TEST_ENROLLMENT_KEY=
+OHM_TEST_GROUP=Hogwarts
+```
+
+### Authentication
+- Create `tests/helpers/auth.setup.ts` that saves storage state for each role
+- Three auth fixtures needed: `instructor.json`, `admin.json`, `student.json`
+- Reference in `playwright.config.ts` as project dependencies
+- Use `test.use({ storageState: 'tests/fixtures/auth/instructor.json' })` per describe block
+
+### Risk Levels
+Tag tests with `@high`, `@medium`, `@low`:
+```ts
+test('1.1 — Login @high', ...)
+```
+Run by risk: `npx playwright test --grep @high`
+
+### Multi-Context Tests (Payment Suite)
+Some payment tests require 3 simultaneous browser contexts:
+1. Teacher window (OHM — controls group payment settings)
+2. Lumen Admin window (Fast Forward / Destroy EnrollmentLog)
+3. Student window (OHM — experiences paywall)
+
+Pattern:
+```ts
+test('payment flow', async ({ browser }) => {
+  const teacherCtx = await browser.newContext();
+  const studentCtx = await browser.newContext();
+  // ... test ...
+  await teacherCtx.close();
+  await studentCtx.close();
+});
+```
+
+### New Tab / Popup Handling
+```ts
+const [newPage] = await Promise.all([
+  context.waitForEvent('page'),
+  page.getByRole('link', { name: /link text/i }).click(),
+]);
+await newPage.waitForLoadState();
+expect(newPage.url()).toContain('expected-domain.com');
+```
+
+---
+
+## ⚠️ Critical Business Logic & Gotchas
+
+### Payment Settings (MOST IMPORTANT)
+- Payment settings are ALWAYS read from the **course owner's group**, never the logged-in user
+- If an admin creates a course using the standard "Add New Course" button, the course is owned by the **admin**, not the teacher — this breaks payment settings (regression from OHM-1141)
+- Correct admin flow for creating a course on behalf of a teacher:
+  `Admin Page → find teacher by name → click "Add Course" from the gray menu bar`
+- When writing payment tests, always assert which account owns the course
+
+### OHM Groups
+- OHM group = Waymaker account = Lumen Admin institution
+- A user must be assigned to a group for their courses to have payment options
+- "Not required" payment setting removes payment from ALL courses in that group
+- Group assignment is set via: `Admin Page → Search user → Edit user → Group dropdown`
+
+### Student EnrollmentLog (Payment Tests)
+- `enrollment_id` visible in page source: `<!-- enrollmentid / enrollment_id = 117 -->`
+- Not present if: course has no payment, OR user is logged in as teacher/admin
+- Fast Forward = simulate trial expiry
+- Destroy = reset student state to re-run payment scenarios
+- Both actions are in Lumen Admin → Enrollment Logs
+
+### Known Bugs / Pending Changes
+- **User Settings**: Accessibility/Display Preferences changing in upcoming sprint — skip those tests
+- **Admin Groups page**: Missing breadcrumb dashboard — known bug, don't assert for it
+- **Blank LTI course secret**: Appears saveable — potential security bug (OHM note)
+- **New Instructors Report**: Meaningful only in Production — skip in staging or tag `@production-only`
+- **Gradebook status flags**: Require specific seeded student data states (IP, OT, PT, EC, NC, NS, LP etc.)
+- **Desmos**: Requires its own dedicated test section — placeholder only for now
+- **Debug Mode** (Utilities): Do not automate — use `test.skip()`
+- **Update ExtRefs** (Utilities): Marked dangerous in spec — do not automate
+- **LMS Integration / Canvas**: Requires Canvas LMS environment — separate suite, tag `@canvas`
+
+### Destructive Tests (Delete, Batch Operations)
+- Always create a dedicated temp course/user in `beforeEach` before testing delete flows
+- Never delete shared test fixtures
+- Clean up in `afterEach` or `afterAll`
+
+---
+
+## Generating New Test Files
+When asked to generate a test file:
+1. Reference the corresponding section number in `tests/specs/ohm-test-suite.md`
+2. Create or reuse the Page Object for that area
+3. Follow naming: `[feature-area].spec.ts`
+4. Include all test cases from the spec section — stub as `test.skip()` if not yet implementable
+5. Add comment at top with spec section number and source
+
+## Test Execution Naming (for manual runs logged in Confluence)
+```
+YYYY-MM-DD - Regression Test Suite - OHM - <tester initials>
+YYYY-MM-DD - Smoke Test Suite - OHM - <tester initials>
+```
