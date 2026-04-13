@@ -1,0 +1,220 @@
+{
+  "raw_outputs": [
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Ariel is reading a research paper about sexual orientation. The paper states that multiple studies over the last two decades have pointed toward a biological basis for sexual orientation. What conclusion can Ariel make from this finding?",
+              "options": [
+                "Sexual orientation is influenced by a combination of genetic and environmental factors.",
+                "Individuals can choose their sexual orientation.",
+                "Sexual orientation is primarily a social construct.",
+                "Cultural norms have a significant impact on sexual orientation."
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Describe variations in sexual orientation and gender identity",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Kai is learning about the spectrum of sexual orientations. Which of the following statements BEST reflects an understanding of this concept?",
+              "options": [
+                "Sexual orientation is determined by biological sex assigned at birth.",
+                "Sexual orientation encompasses a range of attractions and is not limited to being solely heterosexual or homosexual.",
+                "Sexual orientation is a choice and can be changed with therapy.",
+                "Individuals who identify as bisexual are attracted to all genders."
+              ],
+              "correct_answer": 1
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Describe variations in sexual orientation and gender identity",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Jayla is learning about the negative health consequences that can result from anorexia and bulimia nervosa. Which of the following is a potential health consequence of both conditions?",
+              "options": [
+                "Tooth decay",
+                "Kidney failure",
+                "Substance abuse",
+                "Amenorrhea"
+              ],
+              "correct_answer": 1
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Jayla is writing a paper about eating disorders. She is focusing on the long-term health effects of anorexia and bulimia. Which of the following is NOT a health consequence common to both anorexia and bulimia?",
+              "options": [
+                "Electrolyte Imbalances",
+                "Heart Problems",
+                "Tooth Decay",
+                "Vision Loss"
+              ],
+              "correct_answer": 3
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Kai is studying to be a neuroscientist.  Which brain imaging technique would they use to create images of brain activity by measuring changes in blood flow and oxygen levels?",
+              "options": [
+                "Electroencephalography (EEG)",
+                "Positron Emission Tomography (PET)",
+                "Functional magnetic resonance imaging (fMRI)",
+                "Computerized tomography (CT)"
+              ],
+              "correct_answer": 2
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Keisha is studying to be a neuroscientist. She's writing a paper about the history of brain imaging techniques. Which of the following techniques does NOT produce an image of the brain?",
+              "options": [
+                "Electroencephalography (EEG)",
+                "Magnetic Resonance Imaging (MRI)",
+                "Computed Tomography (CT)",
+                "Positron Emission Tomography (PET)"
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Yolanda is conducting research on the correlation between the number of hours students spend studying and their exam scores. What type of correlation would she most likely expect to find?",
+              "options": [
+                "No correlation",
+                "Negative correlation",
+                "Zero correlation",
+                "Positive correlation"
+              ],
+              "correct_answer": 3
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Explain and give examples of correlation",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Jayden noticed that as the temperature outside increased, he sold more cups of lemonade at his lemonade stand. What is this an example of?",
+              "options": [
+                "Causation",
+                "Correlation",
+                "Extrapolation",
+                "Interpolation"
+              ],
+              "correct_answer": 1
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Explain and give examples of correlation",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Mateo often feels anxious when he smells rubbing alcohol because he associates that smell with getting injections at the doctor's office. In this instance of classical conditioning, what would the smell of rubbing alcohol be classified as?",
+              "options": [
+                "Unconditioned Stimulus",
+                "Conditioned Stimulus",
+                "Unconditioned Response",
+                "Conditioned Response"
+              ],
+              "correct_answer": 1
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Explain classical conditioning",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Which of the following is the best example of classical conditioning?",
+              "options": [
+                "A child getting excited when they see the car pull in the driveway, because they know their parent is home.",
+                "A dog learning to sit on command for a treat.",
+                "A student getting a sticker on their chart for completing their work.",
+                "A teenager getting their phone taken away for not taking out the trash."
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-pro",
+      "learning_outcome": "Explain classical conditioning",
+      "included_content_in_prompt": false
+    }
+  ],
+  "summary": {
+    "input_tokens_per_request_with_content": 2210.2,
+    "output_tokens_per_request_with_content": 115.2,
+    "input_tokens_per_request_without_content": 334.8,
+    "output_tokens_per_request_without_content": 118.8
+  }
+}

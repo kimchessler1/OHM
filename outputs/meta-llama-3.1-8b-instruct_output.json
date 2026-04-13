@@ -1,0 +1,180 @@
+{
+  "raw_outputs": [
+    {
+      "content": [
+        {
+          "prompt": "What is one of the most commonly referenced sexual orientations, referring to emotional and erotic attractions to same-sexed individuals?",
+          "options": [
+            "Heterosexual",
+            "Bisexual",
+            "Asexual",
+            "Homosexual"
+          ],
+          "correct_answer": 3
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Describe variations in sexual orientation and gender identity",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Alex, a student in your class, asks you to explain the difference between sexual orientation and gender identity. How would you describe variations in sexual orientation and gender identity?",
+          "options": [
+            "Sexual orientation refers to a person's emotional, romantic, or sexual attraction to others, while gender identity refers to a person's internal sense of being male, female, or something else.",
+            "Sexual orientation is a choice, while gender identity is determined by biology.",
+            "Gender identity is the same as sexual orientation, and they are often used interchangeably.",
+            "Sexual orientation and gender identity are complex and multifaceted concepts that cannot be reduced to simple definitions."
+          ],
+          "correct_answer": 0
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Describe variations in sexual orientation and gender identity",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "prompt": "According to the Mayo Clinic, individuals who suffer from bulimia nervosa, binge eating disorder, and anorexia nervosa face many adverse health consequences. What are some of the health consequences associated with bulimia nervosa?",
+          "options": [
+            "Kidney failure, heart failure, and tooth decay",
+            "Anxiety and depression, and an increased risk for substance abuse",
+            "Bone loss, heart failure, kidney failure, amenorrhea, and reduced function of the gonads",
+            "All of the above"
+          ],
+          "correct_answer": 3
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "According to Dr. Maria, individuals who struggle with anorexia nervosa are at risk for which of the following health consequences?",
+          "options": [
+            "Malnutrition and related organ damage",
+            "Cardiovascular disease",
+            "Type 2 diabetes",
+            "All of the above"
+          ],
+          "correct_answer": 3
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "prompt": "A clinician wants to image the brain of a patient to determine if they have a tumor. Which brain imaging technique would be most appropriate?",
+          "options": [
+            "PET scan",
+            "MRI",
+            "CT scan",
+            "EEG"
+          ],
+          "correct_answer": 2
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Dr. Patel explains that to visualize the brain's structure and function, clinicians and researchers can use various techniques. What are some of these techniques?",
+          "options": [
+            "Functional magnetic resonance imaging (fMRI)",
+            "Computed tomography (CT) scans",
+            "Positron emission tomography (PET) scans",
+            "Diffusion tensor imaging (DTI)"
+          ],
+          "correct_answer": 0
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "prompt": "What does it mean for two variables to be correlated, and how can you determine if a relationship between two variables is due to coincidence or causation?",
+          "options": [
+            "Correlation means that one variable directly causes the other, and causation can be determined by observing the strength of the relationship.",
+            "Correlation means that there is a relationship between two or more variables, but this relationship does not necessarily imply cause and effect.",
+            "Correlation means that there is no relationship between two variables, and any observed relationship is due to coincidence.",
+            "Correlation means that one variable is independent of the other, and any observed relationship is due to chance."
+          ],
+          "correct_answer": 1
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Explain and give examples of correlation",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maria is a researcher studying the relationship between exercise and heart health. She notices that people who exercise regularly tend to have lower blood pressure. What does this suggest about the relationship between exercise and heart health?",
+          "options": [
+            "There is a direct cause-and-effect relationship between exercise and heart health.",
+            "There is a correlation between exercise and heart health, but it's not clear what the underlying factors are.",
+            "There is no relationship between exercise and heart health.",
+            "Exercise has no impact on heart health."
+          ],
+          "correct_answer": 1
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Explain and give examples of correlation",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "prompt": "Ava, a psychology student, notices that every time she hears the sound of her favorite song, she starts to feel happy. What type of learning process is Ava experiencing?",
+          "options": [
+            "Classical conditioning",
+            "Operant conditioning",
+            "Social learning",
+            "Cognitive learning"
+          ],
+          "correct_answer": 0
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Explain classical conditioning",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Ava is a psychologist who wants to understand how Ivan Pavlov's dogs learned to associate the sound of a bell with food. What is classical conditioning?",
+          "options": [
+            "A type of learning where a neutral stimulus is paired with an unconditioned stimulus to elicit an unconditioned response.",
+            "A type of learning where a conditioned stimulus is paired with an unconditioned stimulus to elicit a conditioned response.",
+            "A type of learning where a stimulus is paired with a response to elicit a conditioned response.",
+            "A type of learning where a stimulus is paired with a response to elicit an unconditioned response."
+          ],
+          "correct_answer": 0
+        }
+      ],
+      "model": "meta-llama-3.1-8b-instruct",
+      "learning_outcome": "Explain classical conditioning",
+      "included_content_in_prompt": false
+    }
+  ],
+  "summary": {
+    "input_tokens_per_request_with_content": 2371.0,
+    "output_tokens_per_request_with_content": 221.8,
+    "input_tokens_per_request_without_content": 584.2,
+    "output_tokens_per_request_without_content": 226.0
+  }
+}

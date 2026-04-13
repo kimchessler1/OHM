@@ -1,0 +1,180 @@
+{
+  "raw_outputs": [
+    {
+      "content": [
+        {
+          "prompt": "Maya is attracted to people of the same sex and identifies as gay. Which of the following terms also refers to Maya's emotional and erotic attractions?",
+          "options": [
+            "homosexual",
+            "heterosexual",
+            "bisexual",
+            "asexual"
+          ],
+          "correct_answer": 0
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Describe variations in sexual orientation and gender identity",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maya is learning about the different ways people identify their sexual orientation and gender identity. She wants to understand the variations that exist. Which of the following best describes the difference between sexual orientation and gender identity?",
+          "options": [
+            "Sexual orientation refers to a person's internal sense of their own gender, while gender identity refers to the gender to which a person is attracted.",
+            "Sexual orientation refers to a person's internal sense of their own gender, while gender identity refers to the gender a person is assigned at birth.",
+            "Sexual orientation refers to the gender to which a person is attracted, while gender identity refers to a person's internal sense of their own gender.",
+            "Sexual orientation refers to the gender a person is assigned at birth, while gender identity refers to the gender to which a person is attracted."
+          ],
+          "correct_answer": 2
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Describe variations in sexual orientation and gender identity",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maya is struggling with anorexia nervosa. What is a potential negative health outcome she may experience due to her condition?",
+          "options": [
+            "Increased muscle mass",
+            "Improved bone density",
+            "Heart failure",
+            "Enhanced immune function"
+          ],
+          "correct_answer": 2
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maya is struggling with an eating disorder and has been diagnosed with anorexia nervosa. What is a potential long-term health consequence of this condition?",
+          "options": [
+            "Increased risk of heart disease",
+            "Improved bone density",
+            "Enhanced immune function",
+            "Reduced risk of type 2 diabetes"
+          ],
+          "correct_answer": 0
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maya is a researcher studying the brain's activity when a person is performing a mathematical task. She wants to use a technique that provides high temporal resolution and can pinpoint the exact timing of brain activity. Which of the following techniques would be most suitable for Maya's study?",
+          "options": [
+            "Functional Magnetic Resonance Imaging (fMRI)",
+            "Electroencephalography (EEG)",
+            "Magnetoencephalography (MEG)",
+            "Positron Emission Tomography (PET)"
+          ],
+          "correct_answer": 1
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Dr. Patel, a neuroscientist, wants to visualize the brain's structure and function. Which of the following techniques would allow Dr. Patel to do so?",
+          "options": [
+            "Electroencephalography (EEG)",
+            "Functional Magnetic Resonance Imaging (fMRI)",
+            "Magnetoencephalography (MEG)",
+            "All of the above"
+          ],
+          "correct_answer": 3
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maya notices that as the amount of time she spends studying for a test increases, her test scores also tend to increase. What type of correlation does this represent?",
+          "options": [
+            "Negative correlation",
+            "No correlation",
+            "Positive correlation",
+            "Inverse correlation"
+          ],
+          "correct_answer": 2
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Explain and give examples of correlation",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maya notices that every time she eats a large breakfast, she tends to have more energy throughout the morning. However, on days when she skips breakfast, she often feels sluggish. What type of correlation can be inferred from Maya's observations?",
+          "options": [
+            "Positive correlation",
+            "Negative correlation",
+            "No correlation",
+            "Causal relationship"
+          ],
+          "correct_answer": 1
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Explain and give examples of correlation",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maya notices that every time she hears the sound of the ice cream truck, she starts to feel excited and happy. This is an example of classical conditioning. Which of the following best describes the sound of the ice cream truck in this situation?",
+          "options": [
+            "Unconditioned stimulus (UCS)",
+            "Unconditioned response (UCR)",
+            "Neutral stimulus (NS)",
+            "Conditioned stimulus (CS)"
+          ],
+          "correct_answer": 3
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Explain classical conditioning",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "prompt": "Maya is trying to train her dog to sit on command. She uses a treat to lure the dog into a sitting position, then gives the treat and praise as soon as the dog's bottom touches the floor. Over time, Maya starts using a specific whistle before offering the treat. Eventually, the dog will sit down when it hears the whistle, even if no treat is offered. What term describes the process by which the dog learned to associate the whistle with sitting?",
+          "options": [
+            "Operant conditioning",
+            "Classical conditioning",
+            "Habituation",
+            "Social learning"
+          ],
+          "correct_answer": 1
+        }
+      ],
+      "model": "meta-llama-3.1-70b-instruct",
+      "learning_outcome": "Explain classical conditioning",
+      "included_content_in_prompt": false
+    }
+  ],
+  "summary": {
+    "input_tokens_per_request_with_content": 2371.0,
+    "output_tokens_per_request_with_content": 92.8,
+    "input_tokens_per_request_without_content": 584.2,
+    "output_tokens_per_request_without_content": 126.8
+  }
+}

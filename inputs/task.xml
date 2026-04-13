@@ -1,0 +1,45 @@
+<question-generator>
+  <inputs>
+    <input>
+      <name>CONTENT</name>
+    </input>
+    <input>
+      <name>LEARNING_OUTCOME</name>
+    </input>
+    <input>
+      <name>PROMPT</name>
+    </input>
+    <input>
+      <name>NUM_OPTIONS</name>
+    </input>
+    <input>
+      <name>NUM_QUESTIONS</name>
+    </input>
+  </inputs>
+  <task>
+    <instructions>
+      You are generating multiple-choice questions for students. 
+      The number of questions you generate is specified in the NUM_QUESTIONS input
+      The questions must assess the learning outcome provided in the LEARNING_OUTCOME input. The questions should be informed by the CONTENT input, if it is provided. 
+      The prompt for the first question will be the PROMPT input, if provided. And otherwise, you will write a prompt that assesses a students understanding of the learning outcome from the LEARNING_OUTCOME input.
+      When generating a prompt, a sentence to lead into the question can be included and must use a equitable human name.
+      The questions will have as many answer options as the NUM_OPTIONS input. One option must be the correct answer to the prompt.
+      <important>
+        Do not repeat concepts when generating multiple questions.
+      </important>
+    </instructions>
+  </task>
+  <output>
+    <instructions>
+      <instruction>Follow the JSON format defined in the json-structure tags</instruction>
+      <instruction>Respond only with the json-structure. Do not respond with any other text</instruction>
+    </instructions>
+    <json-structure>"questions": [{"prompt": "", "options": [], "correct_answer": 0}]</json-structure>
+    <explanation>
+      <questions>an array of question objects</questions>
+      <prompt>a string representing the question</prompt>
+      <options>an array containing the possible answers as strings</options>
+      <correct-answer>the index (0-based) of the correct answer in the options array</correct-answer>
+    </explanation>
+  </output>
+</question-generator>

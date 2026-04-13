@@ -1,0 +1,220 @@
+{
+  "raw_outputs": [
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Jamal is trying to better understand how people describe their gender identity.  What are some variations in gender identity that Jamal might learn about?",
+              "options": [
+                "People may identify as male, female, non-binary, or gender fluid",
+                "People may identify as gay, lesbian, or bisexual",
+                "People may identify as asexual or demisexual",
+                "People may identify as heterosexual or homosexual"
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Describe variations in sexual orientation and gender identity",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Aaliyah is learning about different ways people experience their gender identity and sexual orientation. Which of the following statements accurately describes a variation in gender identity? ",
+              "options": [
+                "People who identify as transgender may experience their gender identity differently from the sex they were assigned at birth.",
+                "People who identify as heterosexual are attracted to people of the same gender.",
+                "People who identify as non-binary may experience their gender as neither solely male nor solely female.",
+                "People who identify as bisexual are attracted to people of all genders."
+              ],
+              "correct_answer": 2
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Describe variations in sexual orientation and gender identity",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Aaliyah is learning about the health consequences of eating disorders.  She wants to know what negative impacts can result from anorexia nervosa. What health consequences are often associated with anorexia nervosa?",
+              "options": [
+                "Weight gain, muscle aches, and fatigue",
+                "Bone loss, heart failure, and kidney failure",
+                "Increased appetite, mood swings, and insomnia",
+                "Gastrointestinal problems, headaches, and skin rashes"
+              ],
+              "correct_answer": 1
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Aaliyah is learning about the health consequences of eating disorders. She wants to know what kinds of physical problems can result from anorexia nervosa. Which of the following is a common health consequence of anorexia nervosa?",
+              "options": [
+                "Increased bone density",
+                "Improved heart health",
+                "Decreased risk of osteoporosis",
+                "Heart problems"
+              ],
+              "correct_answer": 3
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Ricardo is interested in studying the activity of neurotransmitter receptors in the brain.  Which of the following brain imaging techniques would be most suitable for Ricardo's research?",
+              "options": [
+                "CT scan",
+                "PET scan",
+                "fMRI",
+                "EEG"
+              ],
+              "correct_answer": 1
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Aaliyah is a researcher studying the effects of meditation on brain activity. What type of imaging technique would be most appropriate for her to use to visualize changes in brain activity in real-time?",
+              "options": [
+                "Computed Tomography (CT) Scan",
+                "Magnetic Resonance Imaging (MRI)",
+                "Positron Emission Tomography (PET) Scan",
+                "Electroencephalography (EEG)"
+              ],
+              "correct_answer": 3
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Aaliyah is reading a research paper where they find a correlation between time spent studying and test scores. This means that as the amount of time spent studying increases, so do the test scores. What type of correlation is this?",
+              "options": [
+                "Positive correlation",
+                "Negative correlation",
+                "No correlation",
+                "Causation"
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Explain and give examples of correlation",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Aisha is interested in the relationship between the number of hours someone studies and their grade on a test. She finds that students who study more tend to get higher grades.  What type of relationship is this?",
+              "options": [
+                "Correlation",
+                "Causation",
+                "Association",
+                "None of the above"
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Explain and give examples of correlation",
+      "included_content_in_prompt": false
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Aaliyah is learning about classical conditioning. She has just read about how Ivan Pavlov used dogs to demonstrate this type of learning. Aaliyah is trying to understand the difference between a conditioned response and an unconditioned response. Which of these statements best describes the difference? ",
+              "options": [
+                "A conditioned response is a learned response to a stimulus, while an unconditioned response is a natural, unlearned response to a stimulus.",
+                "A conditioned response is a reflex, while an unconditioned response is a learned behavior.",
+                "A conditioned response is a response to a neutral stimulus, while an unconditioned response is a response to a conditioned stimulus.",
+                "A conditioned response is a voluntary response, while an unconditioned response is an involuntary response."
+              ],
+              "correct_answer": 0
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Explain classical conditioning",
+      "included_content_in_prompt": true
+    },
+    {
+      "content": [
+        {
+          "questions": [
+            {
+              "prompt": "Aaliyah is trying to teach her dog, Buster, to sit on command. She starts by giving Buster a treat every time he sits down. After a few days, Buster starts to sit down when Aaliyah says \"sit\", even if she doesn't give him a treat. What is this an example of? ",
+              "options": [
+                "Operant conditioning",
+                "Classical conditioning",
+                "Social learning",
+                "Observational learning"
+              ],
+              "correct_answer": 1
+            }
+          ]
+        }
+      ],
+      "model": "gemini-1.5-flash",
+      "learning_outcome": "Explain classical conditioning",
+      "included_content_in_prompt": false
+    }
+  ],
+  "summary": {
+    "input_tokens_per_request_with_content": 2210.2,
+    "output_tokens_per_request_with_content": 135.0,
+    "input_tokens_per_request_without_content": 334.8,
+    "output_tokens_per_request_without_content": 128.8
+  }
+}

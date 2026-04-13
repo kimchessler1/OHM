@@ -1,0 +1,220 @@
+{
+	"raw_outputs": [
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Fatima is learning about sexual orientations. Which of the following best describes a person who experiences attraction in which sex, gender identity, or gender expression do not play a role?",
+							"options": [
+								"Homosexual",
+								"Pansexual",
+								"Bisexual",
+								"Demisexual"
+							],
+							"correct_answer": 1
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Describe variations in sexual orientation and gender identity",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Aisha is studying human sexuality and wants to understand the diverse spectrum of sexual orientations. Which of the following best describes the term 'pansexual'?",
+							"options": [
+								"Attraction to people regardless of their gender identity or biological sex",
+								"Attraction exclusively to one's own gender",
+								"Lack of sexual attraction to anyone",
+								"Attraction to both men and women"
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Describe variations in sexual orientation and gender identity",
+			"included_content_in_prompt": false
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Aisha is studying the health consequences of eating disorders. Which of the following is NOT a potential health consequence of anorexia nervosa?",
+							"options": [
+								"Bone loss",
+								"Heart failure",
+								"Kidney failure",
+								"Increased muscle mass"
+							],
+							"correct_answer": 3
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Zahra is studying eating disorders for her psychology class. Which of the following is NOT a potential health consequence of anorexia or bulimia nervosa?",
+							"options": [
+								"Osteoporosis",
+								"Electrolyte imbalances",
+								"Increased muscle mass",
+								"Cardiac complications"
+							],
+							"correct_answer": 2
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+			"included_content_in_prompt": false
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Aisha is studying neuroscience and wants to understand the different techniques used to image the brain. Which of the following brain imaging techniques uses magnetic fields to create detailed structural images of the brain without radiation?",
+							"options": [
+								"Computerized Tomography (CT) scan",
+								"Positron Emission Tomography (PET) scan",
+								"Magnetic Resonance Imaging (MRI)",
+								"Electroencephalography (EEG)"
+							],
+							"correct_answer": 2
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Dr. Amira Hassan, a neuroscientist, is explaining brain imaging techniques to her students. Which of the following is NOT a common technique used by clinicians and researchers to image or scan the brain?",
+							"options": [
+								"Magnetic Resonance Imaging (MRI)",
+								"Computed Tomography (CT)",
+								"Positron Emission Tomography (PET)",
+								"Ultrasound Elastography"
+							],
+							"correct_answer": 3
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+			"included_content_in_prompt": false
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Aisha is studying the relationship between hours spent exercising and overall mood. She notices that as the number of hours spent exercising increases, people's reported mood scores also tend to increase. What type of correlation does this represent?",
+							"options": [
+								"Positive correlation",
+								"Negative correlation",
+								"Zero correlation",
+								"Causal relationship"
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Explain and give examples of correlation",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Amira is studying the relationship between different variables in her statistics class. She wants to understand the concept of correlation better. Which of the following best explains correlation and provides an accurate example?",
+							"options": [
+								"Correlation is a statistical measure that describes the strength and direction of a relationship between two variables. For example, there might be a positive correlation between the number of hours studied and exam scores.",
+								"Correlation is a mathematical formula used to predict future events based on past occurrences. For instance, it can determine exactly when the stock market will crash.",
+								"Correlation is a method of organizing data into categories. An example would be grouping students by their favorite subjects.",
+								"Correlation is the process of finding the average of a set of numbers. For example, calculating the mean age of a group of people."
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Explain and give examples of correlation",
+			"included_content_in_prompt": false
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Aisha is studying for her psychology exam and comes across the concept of classical conditioning. Which of the following best explains the process of classical conditioning?",
+							"options": [
+								"A process where organisms learn to associate different events or stimuli that frequently occur together",
+								"A learning process where the consequence of a behavior determines its likelihood of being repeated",
+								"A method of training animals to perform complex tasks through rewards and punishments",
+								"A cognitive process where individuals actively construct their understanding of the world"
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Explain classical conditioning",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Aisha is conducting an experiment on classical conditioning. Which of the following best describes the process of classical conditioning?",
+							"options": [
+								"A learned association between a neutral stimulus and an unconditioned stimulus, resulting in a conditioned response",
+								"The reinforcement of desired behaviors through rewards or punishments",
+								"The spontaneous recovery of a previously extinguished behavior without further training",
+								"The ability to transfer learning from one situation to another similar situation"
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-5-sonnet-20240620",
+			"learning_outcome": "Explain classical conditioning",
+			"included_content_in_prompt": false
+		}
+	],
+	"summary": {
+		"input_tokens_per_request_with_content": 2619.2,
+		"output_tokens_per_request_with_content": 127.2,
+		"input_tokens_per_request_without_content": 618.0,
+		"output_tokens_per_request_without_content": 148.4
+	}
+}

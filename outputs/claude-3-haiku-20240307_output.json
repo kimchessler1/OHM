@@ -1,0 +1,220 @@
+{
+	"raw_outputs": [
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "According to the passage, Jada is wondering about the different types of sexual orientations. Which of the following is considered a sexual orientation?",
+							"options": [
+								"Heterosexual, which refers to emotional and erotic attractions to individuals of another sex",
+								"Homosexual, which refers to emotional and erotic attractions to same-sexed individuals",
+								"Bisexual, which refers to emotional and erotic attractions to both same-sexed individuals and individuals of another sex",
+								"All of the above"
+							],
+							"correct_answer": 3
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Describe variations in sexual orientation and gender identity",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Samantha is learning about the diversity of sexual orientations and gender identities. Which of the following is NOT a category of sexual orientation?",
+							"options": [
+								"Heterosexual",
+								"Bisexual",
+								"Pansexual",
+								"Cisgender"
+							],
+							"correct_answer": 3
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Describe variations in sexual orientation and gender identity",
+			"included_content_in_prompt": false
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Samantha, a student in your class, has been struggling with an eating disorder. Based on the information provided, what are some of the potential health consequences Samantha may face if she does not receive proper treatment for her condition?",
+							"options": [
+								"Kidney failure, heart failure, and tooth decay",
+								"Increased risk for anxiety and depression, as well as substance abuse",
+								"Bone loss, heart failure, kidney failure, and cessation of menstrual period",
+								"All of the above"
+							],
+							"correct_answer": 3
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Samantha is learning about the health consequences of anorexia and bulimia nervosa. Which of the following is NOT a common health consequence of these eating disorders?",
+							"options": [
+								"Osteoporosis",
+								"Heart problems",
+								"Kidney failure",
+								"Increased muscle mass"
+							],
+							"correct_answer": 3
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Explain the health consequences resulting from anorexia and bulimia nervosa",
+			"included_content_in_prompt": false
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Jada has learned about various brain imaging techniques. To study the brain's electrical activity, Jada would use which of the following techniques?",
+							"options": [
+								"Computed Tomography (CT) scan",
+								"Positron Emission Tomography (PET) scan",
+								"Functional Magnetic Resonance Imaging (fMRI)",
+								"Electroencephalography (EEG)"
+							],
+							"correct_answer": 3
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Selina is a clinician interested in understanding the types of techniques available to image the brain. Which of the following is an example of a technique used to scan the brain?",
+							"options": [
+								"Magnetic Resonance Imaging (MRI)",
+								"Electrocardiogram (ECG)",
+								"Colonoscopy",
+								"Biopsy"
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Describe the types of techniques available to clinicians and researchers to image or scan the brain",
+			"included_content_in_prompt": false
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Marisa has been studying the relationship between daily exercise and stress levels. Based on the information provided, which of the following best describes the type of relationship Marisa is likely examining?",
+							"options": [
+								"A positive correlation, where increased exercise is associated with decreased stress levels",
+								"A negative correlation, where increased exercise is associated with increased stress levels",
+								"No correlation, as exercise and stress levels are unrelated",
+								"A causal relationship, where exercise directly causes changes in stress levels"
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Explain and give examples of correlation",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Julia is analyzing the relationship between the hours students study and their math test scores. What concept best describes the relationship between these two variables?",
+							"options": [
+								"Regression",
+								"Correlation",
+								"Causation",
+								"Covariance"
+							],
+							"correct_answer": 1
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Explain and give examples of correlation",
+			"included_content_in_prompt": false
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Maria hears a bell ringing and then immediately receives a treat. Over time, Maria starts salivating when she hears the bell ringing, even when no treat is given. In this example, what is the conditioned stimulus?",
+							"options": [
+								"The bell ringing",
+								"The treat",
+								"Salivation",
+								"Maria"
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Explain classical conditioning",
+			"included_content_in_prompt": true
+		},
+		{
+			"content": [
+				{
+					"questions": [
+						{
+							"prompt": "Fatima is trying to understand the principles of classical conditioning. Which of the following best describes the process of classical conditioning?",
+							"options": [
+								"Fatima learns to associate a neutral stimulus with an unconditioned response, resulting in a conditioned response.",
+								"Fatima learns to associate a neutral stimulus with a conditioned response, resulting in an unconditioned response.",
+								"Fatima learns to associate an unconditioned stimulus with a conditioned response, resulting in a neutral response.",
+								"Fatima learns to associate a conditioned stimulus with an unconditioned response, resulting in a neutral stimulus."
+							],
+							"correct_answer": 0
+						}
+					]
+				}
+			],
+			"model": "claude-3-haiku-20240307",
+			"learning_outcome": "Explain classical conditioning",
+			"included_content_in_prompt": false
+		}
+	],
+	"summary": {
+		"input_tokens_per_request_with_content": 2619.2,
+		"output_tokens_per_request_with_content": 147.0,
+		"input_tokens_per_request_without_content": 618.0,
+		"output_tokens_per_request_without_content": 100.0
+	}
+}
