@@ -1,0 +1,125 @@
+# .cursorrules — OHM Playwright Automation
+
+## Project Context
+This is a Playwright UI test automation suite for **Lumen OHM** (Online Homework Manager).
+- Staging environment: https://ohm-stg.preprod.ludev.team/
+- Production smoke tests are a separate suite — do not mix them here
+- Application under test is an instructor-facing LMS tool built on a web platform
+
+## Stack
+- Framework: Playwright (TypeScript)
+- Test runner: `@playwright/test`
+- Language: TypeScript (strict mode preferred)
+- Node version: 18+
+
+## File & Folder Structure
+```
+/tests
+  /specs          ← Markdown test case source files (human-readable)
+  /e2e            ← Playwright test files (*.spec.ts)
+    /auth
+    /home
+    /course-creation
+    /gradebook
+    /admin
+    /utilities
+  /pages          ← Page Object Model classes (*.page.ts)
+  /fixtures       ← Test data files (*.json or *.ts)
+  /helpers        ← Shared utilities and setup helpers
+playwright.config.ts
+.env.example
+```
+
+## Coding Conventions
+
+### Always use Page Object Model (POM)
+- Each major page or feature area gets its own Page Object class in `/tests/pages/`
+- Page Objects expose semantic methods, not raw locators: `loginPage.loginAs(user)` not `page.fill('#username', ...)`
+- Example:
+```ts
+// tests/pages/login.page.ts
+export class LoginPage {
+  constructor(private page: Page) {}
+  async loginAs(username: string, password: string) { ... }
+  async clickForgotPassword() { ... }
+}
+```
+
+### Locator Priority (in order of preference)
+1. `data-testid` attributes — most stable, prefer these
+2. ARIA roles: `getByRole('button', { name: /submit/i })`
+3. Labels: `getByLabel(/email/i)`
+4. Text: `getByText(...)` — use sparingly, avoid for dynamic content
+5. CSS selectors — last resort only
+
+### Environment Variables
+- Never hardcode credentials or URLs
+- All environment-specific values go in `.env` (gitignored)
+- Document required vars in `.env.example`
+```
+BASE_URL=https://ohm-stg.preprod.ludev.team
+OHM_USERNAME=
+OHM_PASSWORD=
+OHM_ADMIN_USERNAME=
+OHM_ADMIN_PASSWORD=
+TEST_COURSE_ID=
+TEST_ENROLLMENT_KEY=
+```
+
+### Test Structure
+- One `test.describe` block per spec section (matching the spec number in ohm-test-suite.md)
+- Test IDs in names should match spec IDs: `'1.1 — Confirm login...'`
+- Use `test.beforeEach` for authentication where needed
+- Use `test.use({ storageState })` with saved auth state to avoid logging in for every test
+
+### Authentication
+- Create a `tests/helpers/auth.setup.ts` that logs in and saves storage state
+- Reference it in `playwright.config.ts` as a project dependency
+- This prevents re-login on every test and speeds up the suite significantly
+
+### Risk Levels
+- Tag tests with risk level using Playwright tags:
+```ts
+test('1.1 — Login @high', ...)
+test('2.2 — Add New Course @medium', ...)
+```
+- Run only high-risk tests: `npx playwright test --grep @high`
+
+### Assertions
+- Always use `expect(...).toBeVisible()` over checking for element existence
+- Use `expect(...).toHaveURL(...)` after navigation
+- Add meaningful error context where possible
+- Wait for network idle or specific element visibility instead of arbitrary timeouts
+
+### New Tab / Popup Handling
+```ts
+const [newPage] = await Promise.all([
+  context.waitForEvent('page'),
+  page.getByRole('link', { name: /link text/i }).click(),
+]);
+await newPage.waitForLoadState();
+expect(newPage.url()).toContain('expected-domain.com');
+```
+
+## Generating New Test Files
+When asked to generate a test file:
+1. Reference the corresponding section in `tests/specs/ohm-test-suite.md`
+2. Create or reuse the Page Object for that area
+3. Follow the naming convention: `[feature-area].spec.ts`
+4. Include all test cases from the spec section, even if implementation is `test.skip()`
+5. Add a comment at the top linking back to the spec section number
+
+## Known Caveats & Notes from the Spec
+- **User Settings**: Accessibility/Display Preferences are changing in an upcoming sprint — tests for those should be skipped/marked pending
+- **Admin breadcrumb**: Groups page missing breadcrumb dashboard — known bug, don't assert for it
+- **New Instructors Report**: Best tested in Production only — skip in staging suite or mark as `@production-only`
+- **Gradebook status flags**: Require specific student data states (IP, OT, PT, etc.) — use seeded test data
+- **Desmos**: Requires its own dedicated test section — placeholder tests only for now
+- **Debug Mode** (Utilities 19.10): Do not automate; mark as `test.skip()`
+- **Update ExtRefs** (Utilities 19.15): Marked as dangerous in spec — do not automate
+- **LMS Integration** (Due Dates, Copies of Copies): Requires Canvas LMS setup — separate suite
+
+## When Generating Tests, Always Ask About
+- What test user roles are available (instructor, admin, student)?
+- Are there seeded courses or should the test create its own data?
+- Should tests clean up after themselves (delete created courses, users, etc.)?
